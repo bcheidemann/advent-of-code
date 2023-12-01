@@ -1,5 +1,7 @@
 # Advent of Code 2023
 
+See [advent of code](https://adventofcode.com/).
+
 ## Tests
 
 To run the tests for all solutions:
