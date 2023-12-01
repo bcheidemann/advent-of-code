@@ -15,7 +15,7 @@ deno task test
 Solutions for each day can be generated using the accompanying TUI app:
 
 ```sh
-npm task start
+deno task start
 ```
 
 ![TUI](docs/tui.png)
