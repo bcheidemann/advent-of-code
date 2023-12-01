@@ -1,7 +1,8 @@
 {
   "importMap": "import_map.json",
   "tasks": {
-    "dev": "deno run --watch main.ts",
-    "start": "deno run main.ts"
+    "dev": "deno run --allow-read --watch main.ts",
+    "start": "deno run --allow-read main.ts",
+    "test": "deno test --allow-read"
   }
 }
