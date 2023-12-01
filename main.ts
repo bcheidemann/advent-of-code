@@ -2,7 +2,7 @@ import { App } from "./app/app.ts";
 import { AppControls } from "./app/app_controls.ts";
 import { Logger } from "./app/logger.ts";
 import { SelectDayScreen } from "./app/screens/select_day_screen.ts";
-import { day1Part1 } from "./days/1/partOne.ts";
+import { day1Part1 } from "./days/1/part_one.ts";
 
 if (import.meta.main) {
   new App(

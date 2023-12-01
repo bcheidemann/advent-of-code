@@ -11,6 +11,6 @@ export function run(input: string): string {
 }
 
 export function day1Part1(): string {
-  const input = Deno.readTextFileSync("./days/1/input.txt");
+  const input = Deno.readTextFileSync("./days/1/part_one_input.txt");
   return run(input);
 }
