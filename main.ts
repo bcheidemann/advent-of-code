@@ -4,6 +4,7 @@ import { Logger } from "./app/logger.ts";
 import { SelectDayScreen } from "./app/screens/select_day_screen.ts";
 import { day1Part1 } from "./days/1/part_one.ts";
 import { day1Part2 } from "./days/1/part_two.ts";
+import { day2Part1 } from "./days/2/part_one.ts";
 
 if (import.meta.main) {
   new App(
@@ -20,6 +21,15 @@ if (import.meta.main) {
             {
               name: "Part 2",
               run: day1Part2,
+            },
+          ],
+        },
+        {
+          name: "Day 2",
+          parts: [
+            {
+              name: "Part 1",
+              run: day2Part1,
             },
           ],
         },
