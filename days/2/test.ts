@@ -1,11 +1,14 @@
 import { assertEquals } from "assert";
 import { describe, it } from "bdd";
-import { parseLine, run as runPart1 } from "./part_one.ts";
+import { parseLine } from "./common.ts";
+import { run as runPart1 } from "./part_one.ts";
+import { run as runPart2 } from "./part_two.ts";
 
 describe("Day 1", () => {
   it("parseLine", () => {
     // Arrange
-    const line = "Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red";
+    const line =
+      "Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red";
 
     // Act
     const result = parseLine(line);
@@ -47,5 +50,16 @@ describe("Day 1", () => {
 
     // Assert
     assertEquals(result, "8");
+  });
+
+  it("Part 2", async () => {
+    // Arrange
+    const input = await Deno.readTextFile("./days/2/part_two_input_test.txt");
+
+    // Act
+    const result = runPart2(input);
+
+    // Assert
+    assertEquals(result, "2286");
   });
 });

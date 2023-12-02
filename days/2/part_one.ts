@@ -1,44 +1,7 @@
-type CubeColorWithCount = {
-  color: string;
-  count: number;
-};
-
-type Round = {
-  cubes: CubeColorWithCount[];
-};
-
-type Game = {
-  id: number;
-  rounds: Round[];
-};
-
-export function parseLine(line: string): Game {
-  const id = parseInt(line.substring("Game ".length, line.indexOf(":")));
-  const rounds = line
-    .substring(line.indexOf(":") + 1)
-    .split(";")
-    .map((round) => {
-      return {
-        cubes: round
-          .split(",")
-          .map((cube) => cube.trim())
-          .map((cube) => {
-            const [count, color] = cube.trim().split(" ");
-            return {
-              color,
-              count: parseInt(count),
-            };
-          }),
-      };
-    });
-  return {
-    id,
-    rounds,
-  };
-}
+import { Color, parseLine } from "./common.ts";
 
 export function run(input: string): string {
-  const maxByColor: Record<string, number> = {
+  const maxByColor: Record<Color, number> = {
     red: 12,
     green: 13,
     blue: 14,
