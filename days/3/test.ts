@@ -1,7 +1,8 @@
 import { assertEquals } from "assert";
 import { describe, it } from "bdd";
-import { Parser, run as runPart1 } from "./part_one.ts";
+import { run as runPart1 } from "./part_one.ts";
 import { Rectangle } from "./rectangle.ts";
+import { Parser } from "./parser.ts";
 
 describe("Day 3", () => {
   describe("Rectangle", () => {
