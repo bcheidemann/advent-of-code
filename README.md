@@ -19,3 +19,9 @@ deno task start
 ```
 
 ![TUI](docs/tui.png)
+
+## Write-ups
+
+Where the solution to a task is non-trivial or otherwise of interest, I have included a write-up.
+
+- [Day 3](days/3/WRITEUP.md)

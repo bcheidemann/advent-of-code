@@ -1,7 +1,5 @@
 # Day 3
 
-## Part 1
-
 Day 3 asks that we find all numbers which are "adjacent" to a symbol.
 
 ```text
