@@ -4,7 +4,7 @@ import { parseLine } from "./common.ts";
 import { run as runPart1 } from "./part_one.ts";
 import { run as runPart2 } from "./part_two.ts";
 
-describe("Day 1", () => {
+describe("Day 2", () => {
   it("parseLine", () => {
     // Arrange
     const line =

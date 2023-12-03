@@ -6,6 +6,7 @@ import { day1Part1 } from "./days/1/part_one.ts";
 import { day1Part2 } from "./days/1/part_two.ts";
 import { day2Part1 } from "./days/2/part_one.ts";
 import { day2Part2 } from "./days/2/part_two.ts";
+import { day3Part1 } from "./days/3/part_one.ts";
 
 if (import.meta.main) {
   new App(
@@ -35,6 +36,15 @@ if (import.meta.main) {
             {
               name: "Part 2",
               run: day2Part2,
+            },
+          ],
+        },
+        {
+          name: "Day 3",
+          parts: [
+            {
+              name: "Part 1",
+              run: day3Part1,
             },
           ],
         },
