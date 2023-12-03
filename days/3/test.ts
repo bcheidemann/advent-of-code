@@ -1,6 +1,7 @@
 import { assertEquals } from "assert";
 import { describe, it } from "bdd";
 import { run as runPart1 } from "./part_one.ts";
+import { run as runPart2 } from "./part_two.ts";
 import { Rectangle } from "./rectangle.ts";
 import { Parser } from "./parser.ts";
 
@@ -214,5 +215,16 @@ describe("Day 3", () => {
 
     // Assert
     assertEquals(result, "4361");
+  });
+
+  it("Part 2", async () => {
+    // Arrange
+    const input = await Deno.readTextFile("./days/3/part_two_input_test.txt");
+
+    // Act
+    const result = runPart2(input);
+
+    // Assert
+    assertEquals(result, "467835");
   });
 });
