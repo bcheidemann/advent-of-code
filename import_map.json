@@ -3,6 +3,7 @@
     "assert": "https://deno.land/std@0.207.0/assert/mod.ts",
     "bdd": "https://deno.land/std@0.208.0/testing/bdd.ts",
     "crayon": "https://deno.land/x/crayon@3.3.3/mod.ts",
+    "fs": "https://deno.land/std@0.208.0/fs/mod.ts",
     "tui": "https://deno.land/x/tui@2.1.6/mod.ts",
     "tui/components": "https://deno.land/x/tui@2.1.6/src/components/mod.ts",
     "tui/input_reader": "https://deno.land/x/tui@2.1.6/src/input_reader/types.ts"

@@ -3,6 +3,7 @@
   "tasks": {
     "dev": "deno run --allow-read --watch main.ts",
     "start": "deno run --allow-read main.ts",
-    "test": "deno test --allow-read"
+    "test": "deno test --allow-read",
+    "add_day": "deno run --allow-read --allow-write scripts/add_day.ts"
   }
 }

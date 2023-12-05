@@ -22,6 +22,15 @@ deno task start
 
 ## Write-ups
 
-Where the solution to a task is non-trivial or otherwise of interest, I have included a write-up.
+Where the solution to a task is non-trivial or otherwise of interest, I have
+included a write-up.
 
 - [Day 3](days/3/WRITEUP.md)
+
+## Generating boilerplate
+
+To generate the boilerplate for a new days challenge, run:
+
+```sh
+deno task add_day
+```
